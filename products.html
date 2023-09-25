@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="products.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="left-side">
+            <div class="logo">
+                <img src="logo.58169365.png" alt="logoicon">
+                <h1>Kafene</h1>
+            </div>
+            <div class="nav">
+                <a id="ordersTag" href="orders.html">Orders</a>
+                <a id="productsTag" href="products.html">Products</a>
+                <a id="usersTag" href="users.html">Users</a>
+            </div>
+        </div>
+
+        <div id="right-side">
+            <a href="">Logout</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Products</h1>
+            <div class="orders-container">
+                <div class="filter-section">
+                    <h3>Filters</h3>
+                    <div class="filter-options">
+                        <p>Count:<span id="orders-count">0</span></p>
+                        <label class="filterCheckbox"><input type="checkbox" name="Expired"  >Expired</label>
+                        <label class="filterCheckbox"><input type="checkbox" name="LowStock"  >Low Stock</label>
+                        <!-- <label class="filterCheckbox"><input type="checkbox" name="InTransit"  checked="">InTransit</label>
+                        <label class="filterCheckbox"><input type="checkbox" name="Delivered"  checked="">Delivered</label> -->
+                    </div>
+                </div>
+                <div class="orders-section">
+                    <table class="OrderTable">
+                        <tr>
+                            <th>ID</th>
+                            <th>Product Name</th>
+                            <th>Product Brand</th>
+                            <th>Expiry Date</th>
+                            <th>Unit Price</th>
+                            <th>Stock</th>
+                        </tr>
+                        <tbody id="orders-tableBody">
+                            <!-- <tr class="orders-TableRow">
+                                <td class="orders-id">714-69-5617</td>
+                                <td class="product-Name">Sally Whebell</td>
+                                <td class="product-Brand">Sally Whebell</td>
+                                <td class="Expiry-date">07 Aug, 2020 </td>
+                                <td class="Unit-amount">$634.2</td>
+                                <td class="Stock">Delivered</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

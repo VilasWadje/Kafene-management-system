@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="orders.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="left-side">
+            <div class="logo">
+                <img src="logo.58169365.png" alt="logoicon">
+                <h1>Kafene</h1>
+            </div>
+            <div class="nav">
+                <a id="ordersTag" href="orders.html">Orders</a>
+                <a id="productsTag" href="products.html">Products</a>
+                <a id="usersTag" href="users.html">Users</a>
+            </div>
+        </div>
+
+        <div id="right-side">
+            <a href="">Logout</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Orders</h1>
+            <div class="orders-container">
+                <div class="filter-section">
+                    <h3>Filters</h3>
+                    <div class="filter-options">
+                        <p>Count:<span id="orders-count">0</span></p>
+                        <label class="filterCheckbox"><input type="checkbox" name="New"  checked="">New</label>
+                        <label class="filterCheckbox"><input type="checkbox" name="Packed"  checked="">Packed</label>
+                        <label class="filterCheckbox"><input type="checkbox" name="InTransit"  checked="">InTransit</label>
+                        <label class="filterCheckbox"><input type="checkbox" name="Delivered"  checked="">Delivered</label>
+                    </div>
+                </div>
+                <div class="orders-section">
+                    <table class="OrderTable">
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                        <tbody id="orders-tableBody">
+                            <!-- <tr class="orders-TableRow">
+                                <td class="orders-id">714-69-5617</td>
+                                <td class="orders-customer">Sally Whebell</td>
+                                <td class="orders-date">07 Aug, 2020 <br>
+                                    <span class="orders-time">2:29 AM</span>
+                                </td>
+                                <td class="orders-amount">$634.2</td>
+                                <td class="orders-status">Delivered</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
